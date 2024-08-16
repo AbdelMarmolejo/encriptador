@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  background: #f3f5fc;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  margin: 0;
+  border: 0;
+  margin: 0;
+}
+
+main {
+  /*width: 100%;
+  height: 90vh;
+ background-color: #e5e5e5;*/
+
+  margin: 0px 40px 40px 40px;
+  justify-content: space-between;
+  display: flex;
+
+  /*width: 100%;
+  height: 100vh;
+  align-items: center;*/
+  /*justify-content: space-between;*/
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.container__header__logo {
+  width: 3.5rem;
+  padding-top: 2%;
+  padding-left: 1%;
+}
+
+/*
+container__informaciones {
+width: 75%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /justify-content: center;
+  align-items: center;
+  gap: 40px;
+}*/
+
+.container__input {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #0a3871;
+  /*padding: 0.5em;*/
+  text-transform: lowercase;
+}
+::placeholder {
+  color: #0a3871;
+}
+
+.container__input:focus {
+  outline: none;
+}
+
+/*.container__area__resultado {*/
+#bodyElement {
+  height: 110%;
+  border: 0px;
+  border-radius: 8px;
+  background: #fff;
+  background-image: url("/assets/Muñeco.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /*position: relative;*/
+  color: #0a3871;
+}
+#bodyElement :focus {
+  /*.container__area__resultado:focus {*/
+  outline: none;
+}
+
+.container__botones {
+  display: flex;
+  margin-top: 18px;
+}
+
+.container__botones__encriptar {
+  background-color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+  margin-left: 15px;
+}
+
+.container__botones__desencriptar {
+  background-color: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 15px;
+  width: 328px;
+}
+
+.container__botones__copiar {
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  height: 67px;
+  width: 336px;
+  color: #0a3871;
+  cursor: pointer;
+  position: absolute;
+}
+
+.informacion {
+  /*width: 100%;*/
+  color: #495057;
+  font-size: 18px;
+  /*display: flex;*/
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  main {
+    display: flex;
+    display: block;
+  }
+
+  .container__input {
+    height: 60vh;
+    font-size: 38px;
+  }
+
+  #bodyElement {
+    width: 100%;
+    height: 10vh;
+    background-image: none;
+    margin-top: 5%;
+  }
+
+  .container__botones__copiar {
+    margin-left: 20%;
+  }
+}
+
+/*============================================================================== 
+iPhone X || 375 x 812 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  main {
+    margin: 0px 10px 10px 10px;
+  }
+
+  main {
+    display: flex;
+    display: block;
+  }
+
+  #bodyElement {
+    width: 100%;
+    height: 25vh;
+    background-image: none;
+    margin-top: 5%;
+  }
+
+  .container__botones {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    gap: 24px;
+  }
+
+  .informacion {
+    font-size: 14px;
+  }
+}
